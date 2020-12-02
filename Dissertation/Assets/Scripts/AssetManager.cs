@@ -21,6 +21,12 @@ public class AssetManager : MonoBehaviour
 
     //Post Process Effects
     public GameObject volumeObj;
+
+    //Timer
+    private static float playTime = 0.0f;
+
+    //Data Collection
+    public static GameObject dataCollector;
     
 
     // Start is called before the first frame update
@@ -43,6 +49,8 @@ public class AssetManager : MonoBehaviour
         } else {
             //Debug.Log("X: " + leftController.transform.position.x);
         }
+
+        playTime += Time.deltaTime;//Play time counter
     }
 
     private void FirstAssignment() {
@@ -70,6 +78,10 @@ public class AssetManager : MonoBehaviour
             allAssigned = true;
             Debug.Log("all assigned");
         }
+
+        if(dataCollector == null) {
+            dataCollector = GameObject.Find("DataCollecter");
+        }
     }
 
     public static GameObject GetPlayer() {
@@ -96,4 +108,11 @@ public class AssetManager : MonoBehaviour
         return inputManager;
     }
 
+    public static float GetPlayTime() {
+        return playTime;
+    }
+
+    public static GameObject GetDataCollecter() {
+        return dataCollector;
+    }
 }

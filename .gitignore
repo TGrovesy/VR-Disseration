@@ -33,7 +33,7 @@ ExportedObj/
 *.sln
 *.suo
 *.tmp
-*.user
+*.usermotion tec
 *.userprefs
 *.pidb
 *.booproj
