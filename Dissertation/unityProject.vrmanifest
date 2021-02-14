@@ -5,7 +5,7 @@
       "app_key": "application.generated.unity.dissertation.exe",
       "launch_type": "url",
       "url": "steam://launch/",
-      "action_manifest_path": "D:\\Documents\\programing\\Unity\\Dissertation\\Assets\\StreamingAssets\\SteamVR\\actions.json",
+      "action_manifest_path": "D:\\Documents\\programing\\Unity\\VR-Disseration\\Dissertation\\Assets\\StreamingAssets\\SteamVR\\actions.json",
       "strings": {
         "en_us": {
           "name": "Dissertation [Testing]"

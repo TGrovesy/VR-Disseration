@@ -36,6 +36,7 @@ public class PlayerEnterCollider : MonoBehaviour
                 isTiming = false;//stop updating timer
                 //print log
                 AssetManager.GetDataCollecter().GetComponent<PostionSampler>().PrintLog();
+                AssetManager.GetDataCollecter().GetComponent<PostionSampler>().CreatePNG();
             }
             Debug.Log("ENTERED!");
             Debug.Log(timer + "S");
